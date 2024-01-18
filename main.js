@@ -253,8 +253,8 @@ for (const pet of pets) {
       <div class="card-body">
         <h5 class="card-title">${pet.name}</h5>
         <p class="card-text">Color: ${pet.color}</p>
-        <p class="card-text">Type: ${pet.type}</p>
         <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <p class="card-text">${pet.type}</p>
       </div>
     </div> `;
 };

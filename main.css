@@ -1,0 +1,10 @@
+ 
+#app {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  text-align: center;
+}
