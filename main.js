@@ -270,6 +270,7 @@ const cardsOnDom = (array) => {
   renderToDom('#app', domString);
 }
 
+cardsOnDom(pets);
 
 // FILTER THE ARRAY BY TYPE //
 //*************************//
