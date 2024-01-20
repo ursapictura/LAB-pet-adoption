@@ -8,6 +8,66 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <form>
+    <div class="form-floating mb-3">
+      <input 
+        type="text" 
+        class="form-control"
+        id="name"
+        placeholder="pet's name"
+        required>
+
+        <label for="floatingInput">Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text"    
+        class="form-control"
+        id="color"
+        placeholder="pet's color"
+        required>
+
+      <label for="floatingInput">Color</label>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text"    
+        class="form-control"
+        id="skill"
+        placeholder="pet's special skill"
+        required>
+
+      <label for="floatingInput">Special Skill</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+      <input type="text"    
+        class="form-control"
+        id="type"
+        placeholder="pet's species"
+        required>
+
+      <label for="floatingInput">Species</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+      <input type="url"    
+        class="form-control"
+        id="image"
+        placeholder="pet's photo"
+        required>
+
+      <label for="floatingInput">Photo</label>
+    </div>
+
+    <button type="submit" class="btn btn-success" id="form-submit">
+      Add Pet
+    </button>
+   </form>
+
   <div class="btn-container">
     <button type="button" class="btn btn-outline-success" id="all-btn">All</button>
     <button type="button" class="btn btn-outline-warning" id="cat-btn">Cats</button>

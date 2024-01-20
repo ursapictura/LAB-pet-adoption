@@ -241,6 +241,10 @@ const pets = [
     }
   ];
 
+
+  // GENERATE HTML FOR ARRAY OF OBJECTS //
+//*************************************//
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
@@ -250,15 +254,15 @@ const renderToDom = (divId, htmlToRender) => {
 const cardsOnDom = (array) => {
   let domString = "";
 
-  for (const member of array) {
+  for (const pet of array) {
     domString += 
       ` <div class="card" style="width: 18rem;">
-        <img src=${member.imageUrl} class="card-img-top" alt=${member.name}>
+        <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
         <div class="card-body">
-          <h5 class="card-title">${member.name}</h5>
-          <p class="card-text">Color: ${member.color}</p>
-          <p class="card-text">Special Skill: ${member.specialSkill}</p>
-          <p class="card-text">${member.type}</p>
+          <h5 class="card-title">${pet.name}</h5>
+          <p class="card-text">Color: ${pet.color}</p>
+          <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+          <p class="card-text">${pet.type}</p>
         </div>
       </div> `;
   };
@@ -266,12 +270,15 @@ const cardsOnDom = (array) => {
   renderToDom('#app', domString);
 }
 
+
+// FILTER THE ARRAY BY TYPE //
+//*************************//
 const filter = (array, petType) => {
   const typeArray = [];
 
-  for(const member of array) {
-    if (member.type === petType) {
-      typeArray.push(member);
+  for(const pet of array) {
+    if (pet.type === petType) {
+      typeArray.push(pet);
     }
   }
   return typeArray;
@@ -300,3 +307,29 @@ showDinoButton.addEventListener("click", () => {
   const dinosInArray = filter(pets, "dino");
   cardsOnDom(dinosInArray);
 });
+
+
+// ADD TO ARRAY WITH HTML FORM //
+//****************************//
+
+const form = document.querySelector('form');
+
+const addPet = (e) => {
+  e.preventDefault();
+
+  const newPet = {
+    id: pets.length + 1,
+    name: document.querySelector("#name").value,
+    color: document.querySelector("#color").value,
+    specialSkill: document.querySelector("#skill").value,
+    type: document.querySelector("#type").value,
+    imageUrl: document.querySelector("#image").value,
+  }
+
+  pets.push(newPet);
+  cardsOnDom(pets);
+  // console.log(pets);
+  form.reset();
+}
+
+form.addEventListener("submit", addPet);
