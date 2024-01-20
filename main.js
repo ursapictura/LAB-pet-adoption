@@ -241,22 +241,33 @@ const pets = [
     }
   ];
 
-
-const targetApp = document.querySelector("#app");
-
-let domString = "";
-
-for (const pet of pets) {
-  domString += 
-    ` <div class="card" style="width: 18rem;">
-      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-      <div class="card-body">
-        <h5 class="card-title">${pet.name}</h5>
-        <p class="card-text">Color: ${pet.color}</p>
-        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
-        <p class="card-text">${pet.type}</p>
-      </div>
-    </div> `;
+const renderToDom = (divId, htmlToRender) => {
+  const selectedDiv = document.querySelector(divId);
+  selectedDiv.innerHTML = htmlToRender;
 };
 
-targetApp.innerHTML = domString;
+
+const cardsOnDom = (array) => {
+  let domString = "";
+
+  for (const pet of pets) {
+    domString += 
+      ` <div class="card" style="width: 18rem;">
+        <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+        <div class="card-body">
+          <h5 class="card-title">${pet.name}</h5>
+          <p class="card-text">Color: ${pet.color}</p>
+          <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+          <p class="card-text">${pet.type}</p>
+        </div>
+      </div> `;
+  };
+
+  renderToDom('#app', domString);
+}
+
+
+const showAllButton = document.querySelector('#all-btn');
+const showCatButton = document.querySelector('#cat-btn');
+const showDogButton = document.querySelector('#dog-btn');
+const showDinoButton = document.querySelector('#dino-btn');
