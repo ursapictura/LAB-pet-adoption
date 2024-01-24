@@ -1,3 +1,5 @@
+let filterToggle = true;
+
 const pets = [
     {
       id: 1,
@@ -13,7 +15,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://images.ctfassets.net/cnu0m8re1exe/59qssnh6iHfxY2r3FrctNZ/195cca2a860caed3b434a2d3de1ea555/trex.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
     },
     {
       id: 3,
@@ -61,7 +63,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://static.independent.co.uk/2020/09/28/12/newFile.jpg"
     },
     {
       id: 9,
@@ -85,7 +87,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://neurosciencenews.com/files/2023/11/dinosaur-senses-neurosicence.jpg"
     },
     {
       id: 12,
@@ -101,7 +103,7 @@ const pets = [
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
       type: "dog",
-      imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg"
+      imageUrl: "https://topdogtips.com/wp-content/uploads/2021/10/Untitled-design-2021-10-16T003430.917.jpg"
     },
     {
       id: 14,
@@ -125,7 +127,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://media.istockphoto.com/id/1168444910/photo/stegosaurus-forest-scene-3d-illustration.jpg?s=612x612&w=0&k=20&c=Uqm7C-MOQdzcbI6UPOyaVabe76wcpFgb6WLiJqOyUTI="
     },
     {
      id: 17,
@@ -133,7 +135,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://people.com/thmb/n6EdTmvAL3TkkAqrT47caD6tUu8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(723x121:725x123)/wisp-the-cat-from-tiktok-092823-1-74797b02afe7475295e1478b2cdf2883.jpg"
     },
     {
       id: 18,
@@ -141,7 +143,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://static.scientificamerican.com/sciam/cache/file/27360B33-0B68-4289-8563F1C6979A1B1B_source.jpg?w=1200"
     },
     {
       id: 19,
@@ -157,7 +159,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://images2.minutemediacdn.com/image/upload/c_crop,w_2121,h_1193,x_0,y_0/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01h84ks8b3kn95ybj78q.jpg"
     },
     {
       id: 21,
@@ -165,7 +167,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://images.immediate.co.uk/production/volatile/sites/3/2021/08/Jurassic-World-Evolution-2-b542b8c.jpg?quality=90&resize=620,414"
     },
     {
         id: 22,
@@ -173,7 +175,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1"
     },
     {
         id: 23,
@@ -234,14 +236,15 @@ const pets = [
     {
         id: 30,
       name: "Lucy",
-      color: "Red",
+      color: "blue",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://c02.purpledshub.com/uploads/sites/41/2019/07/dino_dps_03-7b541f7.jpg?w=1029&webp=1"
     }
   ];
 
 
+//*************************************//
   // GENERATE HTML FOR ARRAY OF OBJECTS //
 //*************************************//
 
@@ -257,12 +260,13 @@ const cardsOnDom = (array) => {
   for (const pet of array) {
     domString += 
       ` <div class="card" style="width: 18rem;">
-        <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+        <img src="${pet.imageUrl}" class="card-img-top" alt="${pet.name}">
         <div class="card-body">
           <h5 class="card-title">${pet.name}</h5>
           <p class="card-text">Color: ${pet.color}</p>
           <p class="card-text">Special Skill: ${pet.specialSkill}</p>
           <p class="card-text">${pet.type}</p>
+          <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
         </div>
       </div> `;
   };
@@ -270,11 +274,14 @@ const cardsOnDom = (array) => {
   renderToDom('#app', domString);
 }
 
-cardsOnDom(pets);
+// cardsOnDom(pets);
 
+
+//****************************//
 // FILTER THE ARRAY BY TYPE //
 //*************************//
 const filter = (array, petType) => {
+  filterToggle = false;
   const typeArray = [];
 
   for(const pet of array) {
@@ -291,6 +298,7 @@ const showDogButton = document.querySelector('#dog-btn');
 const showDinoButton = document.querySelector('#dino-btn');
 
 showAllButton.addEventListener("click", () => {
+  filterToggle = true;
   cardsOnDom(pets);
 });
 
@@ -309,7 +317,7 @@ showDinoButton.addEventListener("click", () => {
   cardsOnDom(dinosInArray);
 });
 
-
+//****************************//
 // ADD TO ARRAY WITH HTML FORM //
 //****************************//
 
@@ -334,3 +342,39 @@ const addPet = (e) => {
 }
 
 form.addEventListener("submit", addPet);
+
+
+//****************************//
+// CREATE DELETE FUNCTION //
+//****************************//
+
+const app = document.querySelector("#app");
+
+app.addEventListener("click", (e) => {
+  if (e.target.id.includes("delete")) {
+    const [, id] = e.target.id.split("--");
+
+    const index = pets.findIndex(e => e.id === Number(id));
+
+    const findArray = pets.find((p) => p.id === Number(id));
+    
+    pets.splice(index, 1);
+    
+    if (filterToggle = true) {
+      cardsOnDom(pets);
+    } else {
+      const filterAfterDelete = filter(pets, findArray.type);
+      cardsOnDom(filterAfterDelete);
+    };
+  }
+
+
+  // cardsOnDom(pets);
+})
+
+const startApp = () => {
+  cardsOnDom(pets);
+}
+
+
+startApp();
