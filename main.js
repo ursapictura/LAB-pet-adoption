@@ -151,7 +151,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://i.guim.co.uk/img/media/b894aa0601cd60f34cbb3ba58d34b0da5e0025be/0_204_720_432/master/720.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2e51429e19a4a8b3dad6488b866391dd"
     },
     {
       id: 20,
@@ -191,7 +191,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://publish.purewow.net/wp-content/uploads/sites/2/2021/03/fluffy-dog-breeds-australian-shepherd.jpg?fit=728%2C524"
     },
     {
       id: 25,
@@ -199,7 +199,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/83/Red_Cat_in_Torzhok_City.jpg"
     },
     {
         id: 26,
